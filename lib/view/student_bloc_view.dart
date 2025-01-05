@@ -104,7 +104,7 @@ class StudentBlocView extends StatelessWidget {
                             icon: const Icon(Icons.delete),
                             onPressed: () {
                               context
-                                  .read()<StudentBlocBloc>()
+                                  .read<StudentBlocBloc>()
                                   .add(DeleteStudentEvent(index));
                             },
                           ),

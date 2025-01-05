@@ -1,5 +1,6 @@
 import 'package:bottomnavigationview/bloc/arithmetic_bloc.dart';
 import 'package:bottomnavigationview/bloc/counter_bloc.dart';
+import 'package:bottomnavigationview/bloc/student_bloc_bloc.dart';
 import 'package:bottomnavigationview/cubit/arithemetic_cubit.dart';
 import 'package:bottomnavigationview/cubit/counter_cubit.dart';
 import 'package:bottomnavigationview/cubit/dashboard_cubit.dart';
@@ -15,6 +16,7 @@ Future<void> initDependency() async {
 void _initBloc() {
   serviceLocator.registerLazySingleton(() => ArithmeticBloc());
   serviceLocator.registerLazySingleton(() => CounterBloc());
+  serviceLocator.registerLazySingleton(() => StudentBlocBloc());
 }
 
 void _initCubit() {
