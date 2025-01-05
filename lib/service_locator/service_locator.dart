@@ -28,6 +28,7 @@ void _initCubit() {
       serviceLocator(),
       serviceLocator(),
       serviceLocator(),
+      serviceLocator(),
     ),
   );
 }

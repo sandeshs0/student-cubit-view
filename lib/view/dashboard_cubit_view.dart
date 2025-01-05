@@ -95,7 +95,7 @@ class DashboardCubitView extends StatelessWidget {
           Card(
             child: InkWell(
               onTap: () {
-                context.read<DashboardCubit>().openStudentView(context);
+                context.read<DashboardCubit>().openStudentBlocView(context);
               },
               child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
